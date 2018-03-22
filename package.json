@@ -1,0 +1,30 @@
+{
+  "name": "minneprise",
+  "version": "1.0.0",
+  "description": "A site to lookup and find Enterprises and clients in the twin cities where to apply for job",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trifit/Minneprise.git"
+  },
+  "keywords": [
+    "Enterprise",
+    "Minneapolis"
+  ],
+  "author": "David H. Parramon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Trifit/Minneprise/issues"
+  },
+  "homepage": "https://github.com/Trifit/Minneprise#readme",
+  "devDependencies": {
+    "webpack": "^4.2.0"
+  },
+  "dependencies": {
+    "webpack-cli": "^2.0.12"
+  }
+}
