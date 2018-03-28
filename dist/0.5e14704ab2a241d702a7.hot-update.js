@@ -1,0 +1,1 @@
+exports.id=0,exports.modules={"./src/server.js":function(s,e,r){"use strict";r.r(e);var p=r("express"),a=r.n(p),t=r("body-parser"),c=r.n(t),h=r("graphql-server-express"),l=r("./src/schema.js"),n=r.n(l),o=a()();o.use("/graphiql",Object(h.graphiqlExpress)({endpointURL:"/graphql"})),o.use("/graphql",c.a.json(),Object(h.graphqlExpress)({schema:n.a})),e.default=o}};
