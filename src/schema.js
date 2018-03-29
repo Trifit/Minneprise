@@ -1,4 +1,5 @@
 import { makeExecutableSchema } from 'graphql-tools';
+
 const RootQuery = `
   type RootQuery {
     hello_world: String!
@@ -10,10 +11,10 @@ const SchemaDefinition = `
   }
 `;
 export default makeExecutableSchema({
- typeDefs: [SchemaDefinition, RootQuery],
- resolvers: {
-   RootQuery: {
-     hello_world: () => "Hi from GraphQL!"
-   }
- }
+  typeDefs: [SchemaDefinition, RootQuery],
+  resolvers: {
+    RootQuery: {
+      hello_world: () => 'Hi from GraphQL!',
+    },
+  },
 });

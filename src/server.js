@@ -8,10 +8,10 @@ const app = express();
 app.use(
   '/graphiql',
   graphiqlExpress({
-    endpointURL: '/graphql'
-  })
+    endpointURL: '/graphql',
+  }),
 );
 
-app.use('/graphql', bodyParser.json(), graphqlExpress({ schema: schema }));
+app.use('/graphql', bodyParser.json(), graphqlExpress({ schema }));
 
 export default app;

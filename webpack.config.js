@@ -27,6 +27,13 @@ module.exports = {
                 ],
                 exclude: /node_modules/
             }
+        ],
+        rules: [
+            {
+              test: /\.js$/,
+              exclude: /node_modules/,
+              loader: "eslint-loader",
+            }
         ]
     },
     plugins: [
